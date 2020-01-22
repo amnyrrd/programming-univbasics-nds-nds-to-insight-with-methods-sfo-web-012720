@@ -14,6 +14,7 @@ def gross_for_director(director_data)
     while column < directors_database[row][:movies].length
       result += directors_database[row][:movies][column][:worldwide_gross]
       column += 1
+      binding.pry
     end
     total = 0
     row += 1
