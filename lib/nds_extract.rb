@@ -13,7 +13,6 @@ def gross_for_director(director_data)
     total += director_data[:movies][row][:worldwide_gross]
     row += 1
   end
-  binding.pry
   total
 end
 
