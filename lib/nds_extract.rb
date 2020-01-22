@@ -6,7 +6,20 @@ require 'pry'
 # pp directors_database
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-
+def gross_for_director(director_data)
+  result = 0
+  row = 0
+  while row < directors_database.length
+    column = 0
+    while column < directors_database[row][:movies].length
+      result += directors_database[row][:movies][column][:worldwide_gross]
+      column += 1
+    end
+    total = 0
+    row += 1
+  end
+  result
+end
 
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
