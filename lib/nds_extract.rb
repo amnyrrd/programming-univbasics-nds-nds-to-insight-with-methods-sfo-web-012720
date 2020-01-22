@@ -15,7 +15,6 @@ def gross_for_director(director_data)
       result += directors_database[row][:movies][column][:worldwide_gross]
       column += 1
     end
-    result = total
     total = 0
     row += 1
   end
