@@ -9,7 +9,7 @@ require 'pry'
 def gross_for_director(director_data)
   result = 0
   row = 0
-  while row < directors_database.length
+  while row < directors_database[:movies].length
     total = 0
     column = 0
     while column < directors_database[row][:movies].length
